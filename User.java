@@ -1,6 +1,6 @@
 import java.io.Serializable;
 
-public class User implements Serializable { // adel
+public class User implements Serializable { // adel - Fitur Implements
     private int idUser;
     private String namaUser;
     private String email;
