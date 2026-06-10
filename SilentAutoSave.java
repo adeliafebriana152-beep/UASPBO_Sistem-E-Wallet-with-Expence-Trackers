@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public final class SilentAutoSave implements Runnable { // sisil dan di cek caca
-    private final ArrayList<User> databaseUser; // caca
-    private final HashMap<String, Dompet> databaseDompet; // caca
+public final class SilentAutoSave implements Runnable { // sisil - Fitur Runnable dan di cek caca
+    private final ArrayList<User> databaseUser; // caca - Final class
+    private final HashMap<String, Dompet> databaseDompet; // caca - Final class
     private volatile boolean running = true;
 
     public SilentAutoSave(ArrayList<User> databaseUser, HashMap<String, Dompet> databaseDompet) {
@@ -16,7 +16,7 @@ public final class SilentAutoSave implements Runnable { // sisil dan di cek caca
     }
 
     @Override
-    public void run() {
+    public void run() { //sisil - Fitur Thread
         while (running) {
             try {
                 // Waktu penyimpanan
