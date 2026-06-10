@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ExpenseTracker implements Serializable { // adel di cek caca
+public class ExpenseTracker implements Serializable { // adel - Fitur abstrac (Implements) & Serializable (penyimpanan) _di cek caca
     private List<Anggaran> daftarAnggaran;
 
     public ExpenseTracker() {
@@ -16,7 +16,7 @@ public class ExpenseTracker implements Serializable { // adel di cek caca
         System.out.println("Budget untuk " + kategori.getNamaKategori() + " diset sebesar Rp" + limit);
     }
 
-    public void updatePengeluaranBudget(Kategori kategori, double jumlah) // emil
+    public void updatePengeluaranBudget(Kategori kategori, double jumlah) // emil - Fitur Throw
             throws PinSalahException, SaldoKurangException, LimitBudgetException {
         for (Anggaran a : daftarAnggaran) {
             if (a.getKategori().getIdKategori() == kategori.getIdKategori()) {
