@@ -1,6 +1,6 @@
 import java.util.Date;
 
-final class Transfer extends Transaksi { // adel dan di cek caca
+final class Transfer extends Transaksi { // adel - Fitur Inheritance dan di cek caca
     private int idPenerima;
     private String namaPenerima;
     private String transferType;
@@ -32,7 +32,7 @@ final class Transfer extends Transaksi { // adel dan di cek caca
     }
 
     @Override
-    public boolean prosesTransaksi(Dompet d, User u, int inputPin) // adel dan emil
+    public boolean prosesTransaksi(Dompet d, User u, int inputPin) // adel - Fitur Polymorfisme dan emil - Fitur Throw
             throws PinSalahException, SaldoKurangException, LimitBudgetException {
         if (inputPin != d.getpin()) {
             System.out.println("Transaksi Gagal: PIN Salah!");
