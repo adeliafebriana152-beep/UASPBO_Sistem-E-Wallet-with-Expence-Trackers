@@ -1,4 +1,4 @@
-public interface Payable { // adel
+public interface Payable { // adel - Fitur Interface
     String getTujuanPembayaran();
     double hitungBiayaAdmin();
 }
