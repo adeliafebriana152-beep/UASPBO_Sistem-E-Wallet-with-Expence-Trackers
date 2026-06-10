@@ -1,6 +1,6 @@
 import java.util.Date;
 
-final class TopUp extends Transaksi { // adel dan di cek caca
+final class TopUp extends Transaksi { // adel - Fitur Inheritance dan di cek caca
     private String metode;
     private String notelp;
 
@@ -19,7 +19,7 @@ final class TopUp extends Transaksi { // adel dan di cek caca
     }
 
     @Override
-    public boolean prosesTransaksi(Dompet d, User u, int inputPin) // emil
+    public boolean prosesTransaksi(Dompet d, User u, int inputPin) // emil -Fitur Throw
             throws PinSalahException, SaldoKurangException, LimitBudgetException {
         boolean adaError = false;
 
@@ -34,7 +34,7 @@ final class TopUp extends Transaksi { // adel dan di cek caca
                 throw new PinSalahException("PIN salah saat mencoba Top Up.");
             }
         }
-        if (this.amount > 0) {
+        if (this.amount > 0) { // adel - Fitur Polymorfisme
             d.setsaldo(d.getsaldo() + this.amount);
             System.out.println("TopUp berhasil dari " + this.metode + " sebesar +Rp" + this.amount);
             d.cekSaldo();
