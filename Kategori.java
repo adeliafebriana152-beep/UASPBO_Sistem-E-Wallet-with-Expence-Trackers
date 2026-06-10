@@ -1,7 +1,7 @@
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public final class Kategori implements Serializable { // adel di cek caca
+public final class Kategori implements Serializable { // adel - Fitur abstrac (Implements) & Serializable (penyimanan) _di cek caca
     private static final long serialVersionUID = 1L;
 
     private static int counterKategori = 0;
