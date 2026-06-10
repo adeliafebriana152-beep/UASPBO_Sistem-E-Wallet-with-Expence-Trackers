@@ -1,4 +1,4 @@
-public final class TransactionLoader implements Runnable { // sisil dan di cek caca
+public final class TransactionLoader implements Runnable { // sisil - Fitur Runnable & Loader dan di cek caca
     private volatile boolean isDone = false;
 
     public void stopLoader() {
