@@ -1,6 +1,6 @@
 import java.io.Serializable;
 
-public final class Anggaran implements Serializable { // adel di cek caca
+public final class Anggaran implements Serializable { // adel - Fitur Abstarc Class (Implements) & Fitur Serializable (penyimpanan) _di cek caca
     private Kategori kategori;
     private double limitBulanan;
     private double totalTerpakai;
