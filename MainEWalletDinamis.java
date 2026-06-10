@@ -20,7 +20,7 @@ public class MainEWalletDinamis { // caca - Static method
         daftarKategori.add(new Kategori("Kebutuhan Rumah", "Pengeluaran"));
 
         System.out.println("=======================================");
-        System.out.println("APLIKASI U-WALLET");
+        System.out.println("APLIKASI E-WALLET");
         System.out.println("=======================================\n");
         System.out.println("Selamat datang di sistem manajemen keuangan Anda!");
 
@@ -145,7 +145,7 @@ public class MainEWalletDinamis { // caca - Static method
                     } else if (pilihan1 >= 3 && pilihan1 <= 5) {
                         System.out.print("Masukkan nominal transaksi: Rp");
                         double amount = input.nextDouble();
-                        input.nextLine(); // Bersihkan buffer
+                        input.nextLine(); 
                         if (Double.isNaN(amount) || Double.compare(amount, 0.0) <= 0) {
                             System.out.println("Nominal tidak valid!");
                             continue;
