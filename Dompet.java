@@ -2,7 +2,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Dompet implements Serializable { // adel
+public class Dompet implements Serializable { // adel - Fitur Abstrac (Implements) & Serializable (penyimpanan)
     private static final long serialVersionUID = 1L;
 
     private double saldo;
@@ -27,7 +27,7 @@ public class Dompet implements Serializable { // adel
         this.setsaldo(saldo);
         this.setpin(pin);
         this.daftarTransaksi = new ArrayList<>();
-        this.tracker = new ExpenseTracker(); // Komposisi
+        this.tracker = new ExpenseTracker(); // Relasi - Komposisi
     }
 
     public int getpin() {
