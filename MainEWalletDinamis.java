@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class MainEWalletDinamis { // caca
+public class MainEWalletDinamis { // caca - Static method
 
     private static ArrayList<User> databaseUser = new ArrayList<>();
     private static HashMap<String, Dompet> databaseDompet = new HashMap<>();
@@ -29,7 +29,7 @@ public class MainEWalletDinamis { // caca
         databaseUser.add(defaultUser);
         databaseDompet.put(defaultUser.getEmail(), defaultUser.getDompet());
 
-        SilentAutoSave autoSaveRunnable = new SilentAutoSave(databaseUser, databaseDompet); // sisil
+        SilentAutoSave autoSaveRunnable = new SilentAutoSave(databaseUser, databaseDompet); // sisil - Multithreading
         Thread threadAutoSave = new Thread(autoSaveRunnable);
         threadAutoSave.setDaemon(true);
         threadAutoSave.start();
@@ -218,7 +218,7 @@ public class MainEWalletDinamis { // caca
                                     "Transfer Instan", kodeBank);
                         }
 
-                        if (tBaru != null) { // sisil dan caca
+                        if (tBaru != null) { // sisil - Multithreading  dan caca
                             TransactionLoader loader = new TransactionLoader();
                             Thread threadLoader = new Thread(loader);
                             threadLoader.start();
@@ -292,7 +292,7 @@ public class MainEWalletDinamis { // caca
                     }
                 }
 
-            } catch (InputMismatchException e) { // emil
+            } catch (InputMismatchException e) { // emil - Try-Catch
                 System.out.println(
                         "[INPUT ERROR] Terjadi kesalahan input! Pastikan format memasukkan data/angka benar.");
                 input.nextLine();
