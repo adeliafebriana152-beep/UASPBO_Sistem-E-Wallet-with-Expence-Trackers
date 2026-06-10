@@ -1,7 +1,7 @@
 import java.io.Serializable;
 import java.util.Date;
 
-public abstract class Transaksi implements Serializable { // adel
+public abstract class Transaksi implements Serializable { // adel - Fitur abstrac (Implements)
     protected Integer idTransaksi;
     protected double amount;
     protected Date tglTransaksi;
@@ -14,19 +14,19 @@ public abstract class Transaksi implements Serializable { // adel
         this.kategori = kategori;
     }
 
-    public final Kategori getKategori() { // caca
+    public final Kategori getKategori() { // caca - Final class
         return this.kategori;
     }
 
-    public final double getAmount() { // caca
+    public final double getAmount() { // caca - Final class
         return this.amount;
     }
 
-    public final Integer getIdTransaksi() { // caca
+    public final Integer getIdTransaksi() { // caca - Final class
         return this.idTransaksi;
     }
 
-    public final Date getTglTransaksi() { // caca
+    public final Date getTglTransaksi() { // caca - Final class
         return this.tglTransaksi;
     }
 
@@ -46,7 +46,7 @@ public abstract class Transaksi implements Serializable { // adel
         }
     }
 
-    public abstract boolean prosesTransaksi(Dompet d, User u, int inputPin) // emil
+    public abstract boolean prosesTransaksi(Dompet d, User u, int inputPin) // emil - Fitur Throw
             throws PinSalahException, SaldoKurangException, LimitBudgetException;
 
     public void tampilkanInformasi() {
