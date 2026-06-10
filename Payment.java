@@ -1,6 +1,6 @@
 import java.util.Date;
 
-final class Payment extends Transaksi implements Payable { // adel dan di cek caca
+final class Payment extends Transaksi implements Payable { // adel - Fitur Inheritance & Implements dan di cek caca
     private int idMerchant;
     private String namaMerchant;
 
@@ -29,7 +29,7 @@ final class Payment extends Transaksi implements Payable { // adel dan di cek ca
     }
 
     @Override
-    public boolean prosesTransaksi(Dompet d, User u, int inputPin) // emil
+    public boolean prosesTransaksi(Dompet d, User u, int inputPin) // adel -Fitur Polymorfisme & emil - Fitur Throw
             throws PinSalahException, SaldoKurangException, LimitBudgetException {
         if (inputPin != d.getpin()) {
             throw new PinSalahException("PIN yang dimasukkan salah.");
