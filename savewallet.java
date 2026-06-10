@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public final class savewallet { // adel dan di cek caca
+public final class savewallet { // caca & adel - Final class, static, save
     private static final String NAMA_FILE = "save_ewallet.dat";
 
     public static void simpanData(ArrayList<User> databaseUser, HashMap<String, Dompet> databaseDompet) {
